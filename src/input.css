@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: yekan;
+  src: url("/src/assets/font/yekan-font/yekan-regular.woff");
+  src: url("/src/assets/font/yekan-font/yekan-regular.ttf");
+}
+
+*{
+  font-family: yekan;
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
