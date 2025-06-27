@@ -8,6 +8,7 @@
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-sky-700: oklch(50% 0.134 242.749);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -1211,6 +1212,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
   .bg-amber-400 {
     background-color: var(--color-amber-400);
   }
@@ -1225,9 +1229,6 @@
   }
   .bg-gray-600 {
     background-color: var(--color-gray-600);
-  }
-  .bg-gray-600\/50 {
-    background-color: color-mix(in oklab, var(--color-gray-600) 50%, transparent);
   }
   .bg-gray-600\/80 {
     background-color: color-mix(in oklab, var(--color-gray-600) 80%, transparent);
@@ -1436,6 +1437,9 @@
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -2098,6 +2102,11 @@
   .group-focus\:h-42 {
     &:is(:where(.group):focus *) {
       height: calc(var(--spacing) * 42);
+    }
+  }
+  .group-active\:text-black {
+    &:is(:where(.group):active *) {
+      color: var(--color-black);
     }
   }
   .peer-checked\:w-8\/12 {

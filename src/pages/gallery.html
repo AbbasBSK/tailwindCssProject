@@ -61,7 +61,8 @@
           <img tabindex="0" class="w-full" src="/src/assets/images/svg/menu-alt-svgrepo-com.svg" alt="" />
         </label>
 
-        <nav class="w-0 z-10 overflow-hidden transition-all duration-1000 peer-checked:w-9/12 fixed top-0 right-0 bg-gray-600 bg-opacity-[0.85] h-[100vh] md:hidden">
+        <nav
+          class="w-0 z-10 overflow-hidden transition-all duration-1000 peer-checked:w-9/12 fixed top-0 right-0 bg-gray-600 bg-opacity-[0.85] h-[100vh] md:hidden">
           <ul class="flex flex-col pt-6 w-72 h-full p-0 space-x-6 items-center">
             <li class="w-full text-center !m-0">
               <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">خانه</a>
@@ -102,70 +103,23 @@
     <main
       class="grow pt-3 flex flex-col gap-y-3 bg-[url(/src/assets/images/03.jpeg)] bg-blend-overlay bg-center bg-cover bg-white/60 ">
       <h2 class="mx-auto text-blue-700">گالری تصاویر</h2>
-      <div class="max-w-[90%] xl:max-w-11/12  mx-auto flex gap-4 flex-col xl:flex-row flex-wrap justify-center">
+      <section class="max-w-[90%] xl:max-w-11/12  mx-auto flex gap-4 flex-col xl:flex-row flex-wrap justify-center">
         <!-- تصویر 1 -->
-        <a id="pigGallery" href="#picBox"
-          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
-          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
-          <div
-            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
-            <p
-              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
-              کلیک کنید...
-            </p>
-          </div>
-        </a>
-        <!-- تصویر 2 -->
-        <a id="pigGallery" href="#picBox"
-          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
-          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
-          <div
-            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
-            <p
-              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
-              کلیک کنید...
-            </p>
-          </div>
-        </a>
-        <!-- تصویر 3 -->
-        <a id="pigGallery" href="#picBox"
-          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
-          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
-          <div
-            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
-            <p
-              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
-              کلیک کنید...
-            </p>
-          </div>
-        </a>
-        <!-- تصویر 2 -->
-        <a id="pigGallery" href="#picBox"
-          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
-          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
-          <div
-            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
-            <p
-              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
-              کلیک کنید...
-            </p>
-          </div>
-        </a>
-        <!-- تصویر 3 -->
-        <a id="pigGallery" href="#picBox"
-          class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
-          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
-          <div
-            class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
-            <p
-              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
-              کلیک کنید...
-            </p>
-          </div>
-        </a>
+        <div id="pigGallery" class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+          <a class="w-full h-full" href="#picBox">
+            <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+            <div
+              class="absolute rounded-2xl w-full group bg-black/50  hover:bg-black/10 transition duration-300  top-0 inset-0 start-0 right-0 left-0">
+              <p
+                class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl opacity-0 group-hover:opacity-100 group-hover:text-black mt-4 duration-300">
+                کلیک کنید...
+              </p>
+            </div>
+          </a>
+        </div>
 
 
-      </div>
+      </section>
       <!-- باکس تارگت -->
       <div id="picBox"
         class="absolute top-0 transition-all duration-700 bg-opacity-50 opacity-0 invisible target:visible flex target:opacity-100 flex-col justify-center items-center w-full md:w-[50%] py-24 bg-gray-600 bottom-0 left-0 right-0 m-auto rounded-2xl">

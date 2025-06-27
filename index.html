@@ -63,7 +63,8 @@
       </label>
       <input class="hidden peer" id="checkbox" type="checkbox">
 
-      <nav class=" w-0 z-10 peer-checked:w-8/12 overflow-hidden transition-all duration-1000  fixed top-0 right-0 bg-gray-600/80  h-[100dvh] md:hidden">
+      <nav
+        class=" w-0 z-10 peer-checked:w-8/12 overflow-hidden transition-all duration-1000  fixed top-0 right-0 bg-gray-600/80  h-[100dvh] md:hidden">
         <ul class="flex flex-col pt-6 w-72 h-full p-0 space-x-6 items-center">
           <li class="w-full text-center !m-0">
             <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">خانه</a>
@@ -106,7 +107,43 @@
 
 
   </header>
-  <main class="bg-[url(/src/assets/images/03.jpeg)] bg-cover bg-center bg-white/60 bg-blend-overlay p-4 grow"></main>
+
+
+
+
+
+
+
+  <main class="bg-[url(/src/assets/images/03.jpeg)] bg-cover bg-center bg-white/60 bg-blend-overlay p-4 grow">
+
+    <h2 class="mx-auto text-center p-2 text-blue-700">گالری تصاویر</h2>
+
+
+    <section class="max-w-[90%] xl:max-w-11/12 mx-auto flex p-4">
+      <!-- تصویر 1 -->
+      <div class="relative shadow-lg overflow-hidden rounded-lg w-full xl:w-[30%] inline-block">
+        <a class="w-full h-full" href="#picBox">
+          <img src="/src/assets/images/03.jpeg" alt="تصویر ۳" class="w-full h-full object-cover rounded-2xl" />
+          <div class="absolute group rounded-2xl w-full bg-black/50  hover:bg-black/10 transition duration-300  inset-0 ">
+            <p
+              class="text-white w-1/2 mx-auto bg-amber-400 outline-solid outline-4 outline-offset-1 outline-sky-700 p-3 shadow-2xl mb-5  shadow-black rounded-2xl text-center text-xl  mt-4 duration-300 opacity-0 group-hover:opacity-100 group-active:text-black">
+              کلیک کنید...
+            </p>
+          </div>
+        </a>
+      </div>
+
+
+
+    </section>
+
+
+  </main>
+
+
+
+
+
   <footer class="bg-gray-800 p-4"></footer>
 </body>
 
